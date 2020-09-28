@@ -1,0 +1,15 @@
+@mixin border-bottom($border-width, $color) {
+    border-bottom: $border-width solid $color;
+}
+
+@mixin link-animation {
+    position: absolute;
+    content: "";
+    left: 0;
+    height: 1.3px;
+    bottom: -10px;
+    transition: 0.5s;
+    width: 0;
+    opacity: 0;
+    background-color: white;
+}

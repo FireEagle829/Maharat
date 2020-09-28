@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>مهارات الحياة</title>
+        <link rel="stylesheet" href="Assets/css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="Assets/css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Reem+Kufi&family=Tajawal&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+        <link rel="icon" type="image/jpg" href="Assets/images/logo.jpg">
+        <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/build/ol.js"></script>
+        <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList"></script>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="py-3">
+            <div class="container">
+                <div class="d-flex">
+                    <div class="nav-logo mr-3"></div>
+                    <a href="#" class="navbar-brand">مهارات الحياة</a>
+                </div>
+                <ul>
+                    <li><a href="#contact" class="link">تواصل</a></li>
+                    <li><a href="#team" class="link">فريق العمل</a></li>
+                    <li><a href="#questions" class="link">اشهر الأسئلة</a></li>
+                    <li><a href="#opinions" class="link">اراء العملاء</a></li>
+                    <li><a href="#about" class="link">من نحن؟</a></li>
+                </ul>
+                <div class="hamburger d-none rounded border pr-3 pt-1 pb-1 pl-3 border-light">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Navbar-mobile -->
+        <section class="nav-mobile">
+            <ul>
+                <li><a href="#about" class="link">من نحن؟</a></li>
+                <li><a href="#questions" class="link">اشهر الأسئلة</a></li>
+                <li><a href="#opinions" class="link">اراء العملاء</a></li>
+                <li><a href="#team" class="link">فريق العمل</a></li>
+                <li><a href="#contact" class="link">تواصل</a></li>
+            </ul>
+            <i class="fas fa-times"></i>
+        </section>
+
+        <!-- Header -->
+        <header id="main-header">
+            <div id="slider" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active carousel-item-1">
+                        <div class="dark-overlay"></div>
+                    </div>
+                    <div class="carousel-item carousel-item-2">
+                        <div class="dark-overlay"></div>
+                    </div>
+                    <div class="carousel-item carousel-item-3">
+                        <div class="dark-overlay"></div>
+                    </div>
+                    <div class="carousel-item carousel-item-4">
+                        <div class="dark-overlay"></div>
+                    </div>
+                    <div class="carousel-item carousel-item-5">
+                        <div class="dark-overlay"></div>
+                    </div>
+                    <div class="carousel-item carousel-item-6">
+                        <div class="dark-overlay"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="header-caption" class="text-right text-white">
+                <div class="container">
+                    <h1 class="mb-5 header-title">مركز مهارات الحياة للصحة النفسية والتنموية</h1>
+                    <p class="header-text">يعد مركز مهارات الحياة من اكبر المراكز النفسية للأستشارات النفسية, الزوجية, التربوية, المهنية.
+                        نقدم استشارتنا من منظور مختلف بمنهج علمي وعملي
+                        <p class="header-text">
+                            يقدم مركز مهارات الحياة خدمات نفسية بدون ادوية لعلاج الحالات النفسية, ويقدم جلسات للأسوياء بهدف الوقاية. كما يقدم المركز تنمية مهارات لذوي الأحتياجات الخاصة من المعاقين عقليا بهدف تنمية مهارتهم المختلفة
+                        </p>
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <!-- About section -->
+        <section class="bg-light py-5" id="about">
+            <div class="deco1"></div>
+            <div class="deco2"></div>
+            <div class="container text-right">
+                <h1 class="about-header mb-5">من نحن؟</h1>
+                <div class="row">
+                    <div class="col-md-5">
+                        <iframe class="img-fluid" style="width: 100%; height: 100%; border: none; min-height: 300px;" src="https://www.youtube.com/embed/x0KNgwzCn1w?rel=0&controls=0&showinfo=0">
+                        </iframe>
+                    </div>
+                    <div class="col-md-7">
+                        <p style="font-size: 1.4rem;" class="about-text" id="about-text" style="transition: 0.35s !important;">قام الدكتور ابراهيم شوقي أستاذ علم النفس بجامعة القاهرة بتأسيس مركز مهارات الحياة سنة 2013 بمدينة 6 اكتوبر بمصر لتقديم كافة الخدمات النفسية بدون ادوية لكافة الأعمار من الأسوياء وذوي المشكلات النفسية وذوي الأحتياجات الخاصة</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Opinions -->
+        <section id="opinions">
+            <div class="pt-5 dark-overlay grey-bg">
+                <div class="container text-right">
+                    <div class="opinion-transition text-black" id="opinions-trans" style="transition: 0.5s !important;">
+                        <h1 class="mb-4">اراء العملاء عن فريق عملنا</h1>
+                        <p class="opinions-text mb-5">ماذا قالوا عنا؟</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="card mb-5 p-3">
+                                <a href="Assets/images/screenshot-1.jpg" data-toggle="lightbox" data-gallery="img-gallery"   >
+                                    <img src="Assets/images/screenshot-1.jpg" style="height: 300px;" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="card mb-5 p-3">
+                                <a href="Assets/images/screenshot-2.jpg" data-toggle="lightbox" data-gallery="img-gallery">
+                                    <img src="Assets/images/screenshot-2.jpg" style="height: 350px;" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card mb-5 p-3">
+                                <a href="Assets/images/screenshot-3.jpg" data-toggle="lightbox" data-gallery="img-gallery">
+                                    <img src="Assets/images/screenshot-3.jpg" style="height: 300px;" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="card mb-5 p-3">
+                                <a href="Assets/images/screenshot-4.jpg" data-toggle="lightbox" data-gallery="img-gallery">
+                                    <img src="Assets/images/screenshot-4.jpg" style="height: 350px;" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card mb-5 p-3">
+                                <a href="Assets/images/screenshot-5.jpg" data-toggle="lightbox" data-gallery="img-gallery">
+                                    <img src="Assets/images/screenshot-5.jpg" style="height: 300px;" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="card mb-5 p-3">
+                                <a href="Assets/images/screenshot-6.jpg" data-toggle="lightbox" data-gallery="img-gallery">
+                                    <img src="Assets/images/screenshot-6.jpg" style="height: 350px;" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card mb-5 p-3">
+                                <a href="Assets/images/screenshot-7.jpg" data-toggle="lightbox" data-gallery="img-gallery">
+                                    <img src="Assets/images/screenshot-7.jpg" style="height: 300px;" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="card mb-5 p-3">
+                                <a href="Assets/images/screenshot-8.jpg" data-toggle="lightbox" data-gallery="img-gallery">
+                                    <img src="Assets/images/screenshot-8.jpg" style="height: 350px;" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Questions -->
+        <section id="questions" class="py-5">
+            <div class="container">
+                <h1 class="text-right mb-5">اشهر الأسئلة</h1>
+                <div class="row no-gutters questionBoxTrans" id="questionsBox">
+                    <div class="col-md-6">
+                        <div id="accordion">
+                            <div class="card bg-dark card-border-top-left">
+                                <div class="card-header">
+                                    <h5 class="text-right">
+                                        <a href="#collapse1" data-parent="#accordion" data-toggle="collapse">هل مركز مهارات حضانة وبها دمج؟</a>
+                                    </h5>
+                                </div>
+                                <div id="collapse1" class="collapse">
+                                    <div class="card-body text-right text-light">
+                                        لا ليس حضانة ولا يوجد نظام للدمج اذ يركز على تدريب الأطفال تدريبا فرديا اي كل طفل على حده
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-dark">
+                                <div class="card-header">
+                                    <h5 class="text-right">
+                                        <a href="#collapse2" data-parent="#accordion" data-toggle="collapse">الجلسات عباره عن ايه؟</a>
+                                    </h5>   
+                                </div>
+                                <div id="collapse2" class="collapse">
+                                    <div class="card-body text-right text-light">
+                                        الجلسات اما لتنمية المهارات العقلية والاجتماعية واللغويه او جلسات نفسية للوقاية او العلاج من المتاعب النفسية بدون أدوية
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-dark">
+                                <div class="card-header">
+                                    <h5 class="text-right">
+                                        <a href="#collapse3" data-parent="#accordion" data-toggle="collapse">هل خدمات المركز قاصره على حالات الأعاقه والمرض النفسي؟</a>
+                                    </h5>   
+                                </div>
+                                <div id="collapse3" class="collapse">
+                                    <div class="card-body text-right text-light">
+                                        لا بل تمتد خدماته للأسوياء من الأطفال. والكبار وذوي المشكلات النفسية والنمائبه
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-dark">
+                                <div class="card-header">
+                                    <h5 class="text-right">
+                                        <a href="#collapse4" data-parent="#accordion" data-toggle="collapse">هل لديكم خدمة التقييمات النفسية؟</a>
+                                    </h5>   
+                                </div>
+                                <div id="collapse4" class="collapse">
+                                    <div class="card-body text-right text-light">
+                                        نعم توجد خدمة لقياس القدرات العقلية وسمات الشخصيه والميول المهنيه وغيرها. من السمات والقدرات العقليه والاجتماعية واللغويه
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-dark">
+                                <div class="card-header">
+                                    <h5 class="text-right">
+                                        <a href="#collapse5" data-parent="#accordion" data-toggle="collapse">ما المقصود بتعديل السلوك؟</a>
+                                    </h5>   
+                                </div>
+                                <div id="collapse5" class="collapse">
+                                    <div class="card-body text-right text-light">
+                                        هي عمليه تعاونيه بين المركز والأهل من أجل تعديل سلوك الاسره ككل بهدف التخلص من التصرفات الضاره للطفل ويحل محلها تصرفات فعاله
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-dark card-border-bottom-left">
+                                <div class="card-header">
+                                    <h5 class="text-right">
+                                        <a href="#collapse6" data-parent="#accordion" data-toggle="collapse">يعني ايه مهارات الحياة؟</a>
+                                    </h5>   
+                                </div>
+                                <div id="collapse6" class="collapse">
+                                    <div class="card-body text-right text-light">
+                                        هي المهارات اللازمة التوافق مع الحياة وتحقيق النجاح الدراسى والمهني والشخصي والاجتماعي مثل مهارات إدارة الضغوط ومهارات التواصل ومهارات إدارة الوقت
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="accordion2">
+                            <div class="card bg-dark card-border-top-right">
+                                <div class="card-header">
+                                    <h5 class="text-right">
+                                        <a href="#collapse7" data-parent="#accordion2" data-toggle="collapse">عندكم طبيب بيكتب ادويه؟</a>
+                                    </h5>
+                                </div>
+                                <div id="collapse7" class="collapse">
+                                    <div class="card-body text-right text-light">
+                                        بالطبع لا إنما تحال بعض الحالات للطبيب ان لزم الأمر
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-dark">
+                                <div class="card-header">
+                                    <h5 class="text-right">
+                                        <a href="#collapse8" data-parent="#accordion2" data-toggle="collapse">كيف بيتم قياس الذكاء؟</a>
+                                    </h5>   
+                                </div>
+                                <div id="collapse8" class="collapse">
+                                    <div class="card-body text-right text-light">
+                                        باستخدام اختبارات عمليه عالميه مقننه تعتمد على قياس مدى كفاءة العقل في التعامل مع مواقف اشكاليه لفظيه وعمليه
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-dark">
+                                <div class="card-header">
+                                    <h5 class="text-right">
+                                        <a href="#collapse9" data-parent="#accordion2" data-toggle="collapse">ما دور المركز في حل الخلافات الزوجيه؟</a>
+                                    </h5>   
+                                </div>
+                                <div id="collapse9" class="collapse">
+                                    <div class="card-body text-right text-light">
+                                        يتمثل دورنا في تفعيل وتنمية مهارات العميل في اداره خلافاته الاسريه بنفسه بتنمية مهاراته وتبصيره بالبدائل المتاحه وتبعاتها النفسية والاجتماعية والمادية
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-dark">
+                                <div class="card-header">
+                                    <h5 class="text-right">
+                                        <a href="#collapse10" data-parent="#accordion2" data-toggle="collapse">هل لازم حضور الزوجين من أجل تحسين حياتهم الزوجيه؟ </a>
+                                    </h5>   
+                                </div>
+                                <div id="collapse10" class="collapse">
+                                    <div class="card-body text-right text-light">
+                                        بالطبع من الأفضل حضور الطرفين وعقد مقابلات معهم معا وفرادي واذا لم يتيسر لاحد الأطراف الحضور يستمر تقديم الدعم النفسي للطرف المتاح ومساعدته عل التوافق النفسي والاجتماعي وخصوصا بممارسة أفعال احادية الجانب يمكنه القيام بها تؤدي إلى تلطيف حياته الاسريه وقد يقضي ذلك الي تجاوب الطرف الآخر مما يعظم من النتائج المرجوة
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-dark">
+                                <div class="card-header">
+                                    <h5 class="text-right">
+                                        <a href="#collapse11" data-parent="#accordion2" data-toggle="collapse">هل لديكم قناة على اليوتيوب؟</a>
+                                    </h5>   
+                                </div>
+                                <div id="collapse11" class="collapse">
+                                    <div class="card-body text-right text-light">
+                                        نعم ورابطها <a href="http://www.youtube.com/c/maharatalhayah">هنا</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-dark card-border-bottom-right">
+                                <div class="card-header">
+                                    <h5 class="text-right">
+                                        <a href="#collapse12" data-parent="#accordion2" data-toggle="collapse">من القائم بادارة مركز مهارات الحياة؟</a>
+                                    </h5>   
+                                </div>
+                                <div id="collapse12" class="collapse">
+                                    <div class="card-body text-right text-light">
+                                        د ابراهيم شوقي استاذ علم النفس بجامعه. القاهرة و أ. كريمة مختار استشاري الصحة النفسية والعلاقات الاسرية
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clip path -->
+        <section id="questions-clip-path" class="py-5"></section>
+
+        <section class="team pt-5" id="team">
+            <div class="container">
+                <h1 class="text-right mb-5 team-heading">فريق عملنا</h1>
+                <div class="team-head mb-5">
+                    <div class="team-head-1">
+                        <img src="Assets/images/person6.jpg" class="mb-3" alt="">
+                        <h3>أ/ كريمة مختار</h3>
+                    </div>
+                    <div class="team-head-2">
+                        <img src="Assets/images/person5.jpg" class="mb-3" alt="">
+                        <h3>د/ ابراهيم شوقي</h3>
+                    </div>
+                </div>
+                <div class="row team-rest">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img src="Assets/images/person4.jpg" class="img-fluid" alt="">
+                                <h3>أ/ مروة فتحي</h3>
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="Assets/images/person3.jpg" class="img-fluid" alt="">
+                                <h3>أ/ محمد عبدالقادر</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img src="Assets/images/person2.jpg" class="img-fluid" alt="">
+                                <h3>أ/ الصفا صقر</h3>
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="Assets/images/person1.jpg" class="img-fluid" alt="">
+                                <h3>أ/ ابتهال عصام الدين</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1E1B18" fill-opacity="1" d="M0,64L21.8,80C43.6,96,87,128,131,122.7C174.5,117,218,75,262,74.7C305.5,75,349,117,393,138.7C436.4,160,480,160,524,176C567.3,192,611,224,655,229.3C698.2,235,742,213,785,181.3C829.1,149,873,107,916,106.7C960,107,1004,149,1047,165.3C1090.9,181,1135,171,1178,144C1221.8,117,1265,75,1309,64C1352.7,53,1396,75,1418,85.3L1440,96L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z"></path></svg>
+        <section id="contact" class="pb-5">
+            <div class="container">
+                <div class="row text-right map-grid">
+                    <div class="col-md-6" id="map" style="min-height: 320px; margin-top: 20px;">
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="text-right mb-5">تواصل معنا</h1>
+                        <p class="contact-text text-right mb-4">:يمكنك التواصل معنا من خلال</p>
+                        <ul dir="rtl">
+                            <li class="contact-info-item mb-3"><b>العنوان:</b> مدينة 6 اكتوبر - الحي الثاني المجاورة الثامنة - شارع طه حسين - فيلا 2508</li>
+                            <li class="contact-info-item mb-3"><b>ارقام التليفون: </b>01120940640 - 01003674823 - 01112962714</li>
+                            <li class="contact-info-item mb-3"><b><a href="https://www.facebook.com/Life-skills-378884719436559">صفحتنا على الفيسبوك</a></b></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+        <script src="Assets/js/script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/build/ol.js"></script>
+        <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList"></script>
+    </body>
+</html>
